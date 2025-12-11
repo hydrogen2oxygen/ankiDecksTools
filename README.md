@@ -1,6 +1,35 @@
 # Anki Decks Tools
 A collection of python scripts for generating Anki Decks.
 
+## multiLanguageDecksMaker.py ##
+
+See **ankiDecksMaker.py**, it is just a customizable version of it.
+
+Bilingual Text to Anki Deck Generator
+
+Required packages:
+pip install genanki deep-translator nltk
+
+Usage:
+```shell
+python ankiDecksMaker.py --input <file.txt> --source-lang ru --target-lang en --deck-name "My Deck"
+```
+
+Arguments:
+```shell
+  --input: Path to input text file (required)
+  --source-lang: Source language ISO 639-1 code (default: ru)
+  --target-lang: Target language ISO 639-1 code (default: en)
+  --deck-name: Name of the Anki deck (default: "Language Learning Deck")
+  --output: Output .apkg file path (default: language_deck.apkg)
+```
+
+### Planned features
+- Audio/TTS - automated pronunciation
+- Better translation - DeepL API (higher quality than Google)
+- Dictionary definitions - instead of just translation
+- Image support - for visual learners
+
 ## ankiDecksMaker.py
 This script generates a Anki Deck from a text file, Russian to English. Use **multiLanguageDecksMaker.py** instead if you want to learn a different language.
 It reads every phrase and new words are inserted as new cards.
@@ -47,3 +76,4 @@ Total cards created: 54
 
 
 ![ddd](img/example.png)
+
