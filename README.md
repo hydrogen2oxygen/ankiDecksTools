@@ -2,7 +2,7 @@
 A collection of python scripts for generating Anki Decks.
 
 ## ankiDecksMaker.py
-This script generates a Anki Deck from a text file.
+This script generates a Anki Deck from a text file, Russian to English. Use **multiLanguageDecksMaker.py** instead if you want to learn a different language.
 It reads every phrase and new words are inserted as new cards.
 Then also the other way around.
 Finally a guess card for the word with the phrase.
@@ -44,5 +44,6 @@ Done! Deck created successfully.
 Total unique words: 18
 Total cards created: 54
 ```
+
 
 ![ddd](img/example.png)
